@@ -1,0 +1,13 @@
+.credit-card-form-wrapper {
+    display: flex;
+}
+
+.form--checkout {
+    .card-header {
+        background-color: $highlight !important;
+    }
+    .sticky-top {
+        top: 127px;
+        z-index: 999;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Green World",
+    "short_name": "Green World",
+    "icons": [
+        {
+            "src": "android-chrome-96x96.png?v=PYqkz26d8x",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#006633",
+    "background_color": "#006633",
+    "display": "standalone"
+}

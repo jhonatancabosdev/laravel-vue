@@ -1,0 +1,30 @@
+// Variables
+@import 'variables';
+@import 'helpers';
+@import 'animations';
+@import "~vue-select/src/scss/vue-select.scss";
+
+// NoUiSlider
+@import 'libraries/nouislider';
+
+// Fontawsome
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~card/lib/card.css';
+
+@import 'global';
+
+@import 'partials/rating';
+@import 'partials/header';
+@import 'partials/navigation';
+@import 'partials/footer';
+@import 'partials/home';
+@import 'partials/product';
+@import 'partials/category';
+@import 'partials/cart';
+@import 'partials/checkout';
+@import 'partials/form';
+@import '~owl.carousel/dist/assets/owl.carousel.css';

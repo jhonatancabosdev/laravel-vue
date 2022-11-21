@@ -1,0 +1,47 @@
+.footer {
+    background: white;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        color: $grey-2;
+        li a {
+            color: $grey-2;
+        }
+    }
+    &__row--social {
+        height: 100px;
+        position: relative;
+        &:before {
+            content: "";
+            left: 0;
+            right: 0;
+            position: absolute;
+            top: 60px;
+            border-top: 1px dashed $secondary-5;
+            height: 1px;
+        }
+        .list {
+            position: absolute;
+            top: 25px;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        a {
+            background: white;
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px dashed $secondary-5;
+            color: $grey;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+        }
+    }    
+    .footer-headline {
+        font-weight: bold;
+        font-size: .9rem;
+    }
+}

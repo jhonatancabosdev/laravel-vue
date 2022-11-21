@@ -1,0 +1,99 @@
+// Body
+$body-bg: #e6e6e6;
+$body-color: #494949;
+
+// Typography
+$font-family-sans-serif: 'Fjalla One', sans-serif;
+$font-family-sans-serif-alt: 'Roboto', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.5;
+
+// Dropdown
+$dropdown-border-radius: 0;
+$dropdown-spacer: 0;
+
+// Colors
+$blue: #0086FF;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #D90202;
+$orange: #FF4F00;
+$yellow: #f9b600;
+$green: #91c000;
+$green2: #79a558;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$grey: #383636;
+$grey-2: #818182;
+$lighter: #fbfbfb;
+$secondary: #f1f1f1;
+$secondary-5: #929292;
+$highlight: #006633;
+$highlight-secondary: rgba(0,107,50,0.19);
+
+// Nav tabs
+$nav-pills-link-active-bg: #818182;
+
+// Theme
+$theme-colors: (
+  "highlight" : $highlight,
+  "highlight-secondary": $highlight-secondary,
+  "white": #ffffff,
+  "black": #000000,
+  "lighter": $lighter,
+  "secondary": $secondary,
+  "secondary-2": #e2e2e2,
+  "secondary-3": #d6d6d6,
+  "secondary-4": #f7f7f7,
+  "secondary-5": $secondary-5,
+  "secondary-6": #b7b7b7,
+  "grey": $grey,
+  "blue": $blue,
+  "secondary-7": $grey-2,
+  "success" : $green,
+  "success-2": $green2,
+  'yellow' : $yellow,
+  'red' : $red,
+  'orange' : $orange,
+);
+
+// Extra padding and margins
+$spaceamounts: (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space * 0.8}rem !important;
+    }
+  
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space * 0.8}rem !important;
+    }
+  }
+}
+
+@for $j from -3 through 12 {
+  @each $side in $sides {
+      .#{str-slice($side, 0, 1)}-#{$j} {
+          #{$side}: #{$j}rem !important;
+      }
+  }
+}
+
+@each $side in $sides {
+  .#{str-slice($side, 0, 1)}--1-2 {
+      #{$side}: -0.5rem !important;
+  }
+  .#{str-slice($side, 0, 1)}--1-4 {
+      #{$side}: -0.25rem !important;
+  }
+  .#{str-slice($side, 0, 1)}-1-2 {
+      #{$side}: 0.5rem !important;
+  }
+  .#{str-slice($side, 0, 1)}-1-4 {
+      #{$side}: 0.25rem !important;
+  }
+}
+

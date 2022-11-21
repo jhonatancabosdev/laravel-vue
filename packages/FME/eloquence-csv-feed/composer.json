@@ -1,0 +1,20 @@
+{
+    "name": "fme/eloquence-csv-feed",
+    "description": "Transform your eloquence model to a csv feed",
+    "authors": [{
+        "name": "Fountainheadme",
+        "email": "fme.test.acc@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "FME\\EloquenceCsvFeed\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\FME\\EloquenceCsvFeed\\EloquenceCsvFeedProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,89 @@
+<template>
+
+    <div class="navbar-collapse shadow-lg offcanvas-collapse bg-white" style="z-index: 101;">
+        <div class="px-1">
+            <div class="">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title">SMS Conversation</h5>
+                    <button type="button" class="close" @click="close()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container-fluid">
+
+                </div>
+                <div class="modal-footer border-top-0">
+                    <div class="btn-group">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+
+<script>
+
+    export default {
+
+        data(){
+            return {
+                
+            }
+        },
+
+        mounted(){
+
+            this.getResults()
+
+            this.$root.$on('open_template_management', () => {
+                $(this.$el).toggleClass('open')
+                $('body').css('overflow-y', 'hidden')
+            })
+        },
+
+        methods: {
+
+            close(){
+                $(this.$el).removeClass('open')
+                $('body').css('overflow-y', 'auto')
+            },
+
+            getResults() {
+                
+            },
+
+        },
+
+        computed: {
+            data(){
+
+                
+            }
+        }
+
+    }
+
+</script>
+
+<style scoped>
+    .offcanvas-collapse {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        overflow-y: auto;
+        background-color: var(--gray-dark);
+        transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        -webkit-transform: translateX(110%);
+        transform: translateX(110%);
+    }
+    .offcanvas-collapse.open {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+</style>

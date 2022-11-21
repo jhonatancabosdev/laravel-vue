@@ -1,0 +1,18 @@
+@keyframes fadeAndGrow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+}

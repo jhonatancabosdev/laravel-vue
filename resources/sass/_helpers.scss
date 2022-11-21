@@ -1,0 +1,125 @@
+html, body {
+	height: 100%;
+}
+
+.bg-main-jumbotron{
+	background-image: url('/images/jumbotron.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@each $color,$hex in $theme-colors {
+	.bg-#{$color}-gradient{
+		background: #{$hex};
+		background: linear-gradient(90deg, $hex 35%, lighten($hex, 35) 100%);
+	}
+}
+
+
+.border-radius-0{
+	border-radius: 0px !important;
+}
+
+.font-open-sans{
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.font-weight-extra-bold{
+	font-weight: 900 !important;
+}
+
+.box-shadow{
+	box-shadow: 0 0 35px -10px #000 !important;
+}
+
+.max-w-100px{
+	max-width: 100px !important;
+}
+
+.min-w-100px{
+	min-width: 100px !important;
+}
+
+.max-h-100px{
+	max-height: 100px !important;
+}
+
+.min-h-300px{
+	min-height: 300px !important;
+}
+
+.max-h-300px{
+	max-height: 300px !important;
+}
+
+.mw-25{
+	max-width: 25% !important;
+}
+
+.mw-50{
+	max-width: 50% !important;
+}
+
+.mw-75{
+	max-width: 75% !important;
+}
+
+.text-decoration-line-through{
+	text-decoration: line-through !important;
+}
+
+
+#v-pills-customer-tabs{
+	.nav-link{
+		color: $nav-pills-link-active-bg;
+
+		&.active{
+			color: $highlight;
+		}
+	}
+}
+
+.button--circle {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #f1f1f1;
+	transition: all .4s ease;
+	&:hover {
+		background: #e5e5e5;
+	}
+}
+
+.font-family-alt {
+	font-family: $font-family-sans-serif-alt !important;
+}
+
+.top-box-shadow {
+	-webkit-box-shadow: inset 0px 12px 10px -10px #bbb;
+	-moz-box-shadow: inset 0px 12px 10px -10px #bbb;
+	box-shadow: inset 0px 12px 10px -10px #bbb;
+}
+
+@media screen and (max-width: 991px) {
+	.img-sm-fluid {
+		max-width: 100%;
+	}
+}
+.underline--special {
+	&::after {
+		content: '';
+		padding-top: 1rem;
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		border-bottom: 3px solid $highlight;
+		width: 100px;
+		height: 1px;
+		display: block;
+		margin: auto;
+	}
+}
+
+.text--orange {
+	color: $orange !important;
+}

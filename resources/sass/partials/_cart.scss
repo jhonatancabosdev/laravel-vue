@@ -1,0 +1,23 @@
+.cart-component__headline {
+    font-size: .8em;
+
+}
+.cart-dropdown {// Dropdown Cart Styles
+
+    min-width: 500px;
+    max-width: 500px;
+    @media screen and (max-width: 480px) {
+        min-width: 410px;
+    }
+    @media screen and (max-width: 479px) {
+        min-width: 310px;
+    }
+    .input--quantity__wrapper {
+        input {
+            width: 50px;
+        }
+    }
+    .cart-item__img {
+        width: 75px;
+    }
+}

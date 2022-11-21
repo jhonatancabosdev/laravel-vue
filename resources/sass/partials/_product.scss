@@ -1,0 +1,67 @@
+.product {
+    &__listing--buttons .btn {
+        font-size: 1.2rem !important;
+    }
+
+    &-container {
+        .owl-item {
+            padding-bottom: 40px;
+        }
+        .card {
+            box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.075);
+            transition: box-shadow 0.3s ease-in-out;
+            &:hover {
+                box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.25);
+            }
+            &-img-top {
+                min-height: 240px;
+            }
+        }
+        &__badge__wrapper {
+            right: 0;
+            top: 0;
+            margin-bottom: -18px;
+            z-index: 1;
+            .badge {
+                font-size: .8rem;
+                line-height: .8rem;
+            }
+        }
+    }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: transparent !important;
+}
+
+.review--add__button__wrapper {
+    @media screen and (max-width: 480px) {
+        position: relative !important;
+    }
+}
+
+.product-listing {
+    .card-body {
+        border: 1px solid $secondary;
+    }
+    dl {
+        dd,dt {
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+}
+
+body.favorites .product-listing {
+    width: 33%;
+}
+
+.add-to-favorites__wrapper {
+    right: 0;
+    top: .5rem;
+}
+.product-component__wrapper {
+    .add-to-favorites__wrapper {
+        top: 0;
+    }
+}

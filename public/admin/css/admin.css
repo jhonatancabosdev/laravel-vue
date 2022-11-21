@@ -1,0 +1,85 @@
+.voyager .side-menu .navbar-header{
+	background: #dc6201;
+}
+
+.app-container .content-container .side-menu .navbar-header .navbar-brand .logo-icon-container{width: 57px;height: 57px;}
+
+.app-container.expanded .content-container .side-menu .navbar-header .navbar-brand .title{
+	left: -2px;
+}
+
+.voyager .breadcrumb a, a{
+	color: #dc6201;
+}
+
+#voyager-loader img{
+	width: 60px;
+	height: 60px;
+}
+
+.voyager .btn{
+	border-radius: 0px !important;
+}
+
+.voyager .btn.btn-warning{
+	background: #ffa45c;
+}
+
+.btn.btn-primary{
+	background: #0da9ffd9;
+}
+
+.voyager .table>thead>tr>th a{
+	color: #76838e;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	vertical-align: middle !important;
+}
+
+.voyager .table.table-striped>tbody>tr:nth-of-type(odd), #dataTable tr:nth-of-type(odd){
+	background: #fff;
+}
+
+.voyager .table.table-striped>tbody>tr:nth-of-type(even), #dataTable tr:nth-of-type(even){
+	background: #f9f9f9;
+}
+
+.app-container .content-container .side-menu .navbar-header .navbar-brand{
+	height: 57px;
+}
+
+.app-container {
+    background: #fff;
+}
+
+#dataTable, #search-input{
+	border: 1px solid #eaeaea;
+}
+
+.panel-body .select2-selection{
+	border: none;
+}
+
+.panel-bordered>.panel-body{
+	box-shadow: 0 0 8px -5px #2d343c;
+}
+
+.mb-0{
+	margin-bottom: 0px !important;
+}
+
+.mb-2{
+	margin-bottom: 10px !important;
+}
+
+.select2-container {
+	border: 1px solid #e4eaec;
+	border-radius: 3px;
+	min-width: 250px;
+	clear: both;
+}
+
+.select2-search__field {
+	min-width: 250px;
+}

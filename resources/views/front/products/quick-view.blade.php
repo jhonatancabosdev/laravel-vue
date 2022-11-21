@@ -1,0 +1,1 @@
+@include('front.shared.product-buy-box')

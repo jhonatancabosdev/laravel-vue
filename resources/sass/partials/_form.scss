@@ -1,0 +1,16 @@
+#contact-form {
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    textarea {
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+.btn,
+.form-control {
+    border-radius: 0 !important;
+}

@@ -1,0 +1,70 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1/ [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # 301 redirects
+    Redirect 301 /parts		https://gwcopiers.com/category/ink-toner-printer-parts
+    Redirect 301 /developer-2		https://gwcopiers.com/category/ink-toner-developer
+    Redirect 301 /drum-2		https://gwcopiers.com/category/ink-toner-copier-drums
+    Redirect 301 /printer-2		https://gwcopiers.com/category/printers
+    Redirect 301 /solid-ink-2		https://gwcopiers.com/category/ink-toner-ink
+    Redirect 301 /waste-container-2		https://gwcopiers.com/category/ink-toner-waste-containers
+    Redirect 301 /toners		https://gwcopiers.com/category/ink-toner-toner
+    Redirect 301 /wishlist		https://gwcopiers.com/favorites
+    Redirect 301 /manufacturer/all		https://gwcopiers.com/brand/1
+    Redirect 301 /login		https://gwcopiers.com/login
+    Redirect 301 /contactus		https://gwcopiers.com/contact-us
+    Redirect 301 /frequently-asked-questions		https://gwcopiers.com/faq
+    Redirect 301 /company-information		https://gwcopiers.com/company-information
+    Redirect 301 /refund-policy		https://gwcopiers.com/refunds
+    Redirect 301 /return-policy		https://gwcopiers.com/returns
+    Redirect 301 /terms-and-conditions		https://gwcopiers.com/terms-and-conditions
+    Redirect 301 /vision		https://gwcopiers.com/vision
+    Redirect 301 /privacy-policy		https://gwcopiers.com/privacy-policy
+    Redirect 301 /about-us		https://gwcopiers.com/about-us
+    Redirect 301 /sitemap		https://gwcopiers.com/sitemap
+    # PARAMS are an issue with .htaccess redirects Redirect 301 /login?ReturnUrl=%2Fvendor%2Fapply		https://gwcopiers.com/login?register#apply-for-vendor-account
+
+</IfModule>
+
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Video
+    ExpiresByType video/mp4 "access plus 1 year"
+    ExpiresByType video/mpeg "access plus 1 year"
+
+    # CSS, JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    # Others
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
